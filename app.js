@@ -49,7 +49,7 @@ function losujCiekawostke() {
   const losowaCiekawostka = ciekawostki[Math.floor(Math.random() * ciekawostki.length)];
 
   appContainer.innerHTML = `
-    <article class="card">
+    <article class="card fade-in">
       <div class="card-img-wrapper">
         <img class="card-img" src="${losowyWpis.zdjecie}" alt="${losowyWpis.tytul[aktualnyJezyk]}">
       </div>
@@ -72,7 +72,7 @@ function filtrujPoTagu(wybranyTag) {
   if (pasujaceWpisy.length === 0) return;
 
   let html = `
-    <div class="filter-info">
+    <div class="filter-info fade-in">
       <span>${tekstyUI[aktualnyJezyk].filtrujeszPo} <strong>#${wybranyTag}</strong> (${pasujaceWpisy.length})</span>
       <button onclick="losujCiekawostke()">${tekstyUI[aktualnyJezyk].wrocDoLosowania}</button>
     </div>
@@ -85,7 +85,7 @@ function filtrujPoTagu(wybranyTag) {
       .join("");
 
     html += `
-      <article class="card">
+      <article class="card fade-in">
         <div class="card-img-wrapper">
           <img class="card-img" src="${wpis.zdjecie}" alt="${wpis.tytul[aktualnyJezyk]}">
         </div>
@@ -105,7 +105,7 @@ function filtrujPoTagu(wybranyTag) {
       const przykladowaCiekawostka = wpis.ciekawostki[aktualnyJezyk][0];
 
       html += `
-        <article class="card">
+        <article class="card fade-in">
           <div class="card-img-wrapper">
             <img class="card-img" src="${wpis.zdjecie}" alt="${wpis.tytul[aktualnyJezyk]}">
           </div>

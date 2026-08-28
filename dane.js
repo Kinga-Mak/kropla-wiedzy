@@ -17,7 +17,7 @@ const bazaWiedzy = [
     {
         id: "tygrys",
         tytul: "Tygrys",
-        zdjecie: "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=600&q=80",
+        zdjecie: "https://images.unsplash.com/photo-1500463959177-e0869687df26?auto=format&fit=crop&w=600&q=80",
         tagi: ["zwierzeta", "tygrys", "ssaki"],
         ciekawostki: [
             "Ryk tygrysa jest tak donośny, że można go usłyszeć z odległości ponad 3 km.",
